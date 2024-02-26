@@ -1,0 +1,17 @@
+version: 2
+updates:
+# Fetch and update latest `npm` packages
+- package-ecosystem: npm
+  directory: '/'
+  schedule:
+    interval: daily
+    time: '00:00'
+  open-pull-requests-limit: 10
+  reviewers:
+    - rawr51919
+  assignees:
+    - rawr51919
+  commit-message:
+    prefix: fix
+    prefix-development: chore
+    include: scope
