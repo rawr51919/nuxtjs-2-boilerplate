@@ -1,4 +1,7 @@
 export default {
+  // nuxt generate's target parameter
+  target: 'static',
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxtjs-2-boilerplate',
@@ -47,5 +50,10 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  // Tailwind CSS configuration
+  tailwindcss: {
+    configPath: 'tailwind.config.js',
   }
 }
